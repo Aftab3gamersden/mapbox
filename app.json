@@ -1,4 +1,45 @@
 {
-  "name": "TickitMobileApp",
-  "displayName": "TickitMobileApp"
+  "expo": {
+    "name": "Tickit-mobile-app",
+    "slug": "Tickit-mobile-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.aftab3gamerden.Tickitmobileapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiYWZ0YWIzZ2FtZXJzZGVuIiwiYSI6ImNsbXRjamU2NjA0MTQyaWxva3Y3NDBkaG8ifQ.N9-5yF9OLzd-25d3wIW6Bw"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e3f3ec6c-f353-4155-946c-e51f4391511f"
+      }
+    }
+  }
 }
